@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<launch>
+  <arg name="record_joint" default="true" />
+  <include file="$(find raspigibbon_bringup)/launch/raspigibbon_joint_publisher.launch" />
+  <node pkg="rosbag" type="record" name="recorder" output="screen" args="--output-name=$(find raspigibbon_direct_teaching)/bagrec/jointlog.bag /raspigibbon/master_joint_state "/>
+</launch>
+
