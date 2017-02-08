@@ -1,6 +1,5 @@
 <?xml version="1.0"?>
 <launch>
-  <arg name="record_joint" default="true" />
   <include file="$(find raspigibbon_bringup)/launch/raspigibbon_joint_subscriber.launch" />
   <node pkg="rosbag" type="play" name="player" output="screen" args="--clock $(find raspigibbon_direct_teaching)/bagrec/jointlog.bag"/>
 </launch>
