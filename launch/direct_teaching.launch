@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<launch>
+  <group ns="raspigibbon">
+    <node name="raspigibbon_direct_teaching" pkg="raspigibbon_direct_teaching" type="teach.py" output="screen" />
+  </group>
+</launch>
+
